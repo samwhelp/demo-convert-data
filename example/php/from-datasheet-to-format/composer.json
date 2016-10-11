@@ -1,0 +1,23 @@
+{
+    "name": "samwhelp/from-datasheet-to-format",
+    "description": "from-datasheet-to-format",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "samwhelp",
+            "email": "samwhelp@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Demo\\": "src/Demo/"
+        }
+    },
+	"scripts": {
+		"main-usage": "./bin/usage.sh"
+    },
+    "require": {
+        "phpoffice/phpexcel": "^1.8"
+    }
+}

@@ -1,0 +1,25 @@
+# Chinese (Traditional) translation for uncode-block-name
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: uncode-block-name\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-10-08 12:05+0800\n"
+"PO-Revision-Date: 2016-10-11 08:50+0800\n"
+"Last-Translator: Test <test@email.home>\n"
+"Language-Team: Chinese (Traditional) <test@email.home>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: php (build 1)\n"
+"Language: zh_TW\n"
+
+msgid "apple"
+msgstr "蘋果"
+
+msgid "banana"
+msgstr "香蕉"
+
+msgid "cherry"
+msgstr "櫻桃"
+

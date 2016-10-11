@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item>
+		<en_us>
+			apple
+		</en_us>
+		<zh_tw>
+			蘋果
+		</zh_tw>
+	</item>
+	<item>
+		<en_us>
+			banana
+		</en_us>
+		<zh_tw>
+			香蕉
+		</zh_tw>
+	</item>
+	<item>
+		<en_us>
+			cherry
+		</en_us>
+		<zh_tw>
+			櫻桃
+		</zh_tw>
+	</item>
+</list>

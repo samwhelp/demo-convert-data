@@ -1,0 +1,21 @@
+
+table.table {
+	border: 1px purple solid;
+	/*
+	border: 1px #551A8B solid;
+	border-width: 1px;
+	border-color: purple;
+	border-style: solid;
+	*/
+    border-collapse: collapse;
+}
+
+table.table th {
+	border: 1px purple solid;
+	padding: 6px;
+}
+
+table.table td {
+	border: 1px purple solid;
+	padding: 6px;
+}

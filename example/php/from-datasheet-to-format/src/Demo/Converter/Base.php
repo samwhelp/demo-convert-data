@@ -14,8 +14,8 @@ class Base {
 
 	public static function newInstance()
 	{
-        return new static(); //http://php.net/manual/en/language.oop5.late-static-bindings.php
-    }
+		return new static(); //http://php.net/manual/en/language.oop5.late-static-bindings.php
+	}
 
 	public function __construct()
 	{

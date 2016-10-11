@@ -1,0 +1,23 @@
+{
+    "name": "samwhelp/from-map-to-xls",
+    "description": "from-map-to-xls",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "samwhelp",
+            "email": "samwhelp@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Demo\\": "src/Demo/"
+        }
+    },
+	"scripts": {
+		"run": "./from-map-to-xls.php"
+    },
+    "require": {
+        "phpoffice/phpexcel": "^1.8"
+    }
+}

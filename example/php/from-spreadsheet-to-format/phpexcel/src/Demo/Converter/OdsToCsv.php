@@ -10,11 +10,16 @@ class OdsToCsv extends BaseSheet {
 
 	public function prep()
 	{
-		parent::prep();
 
-		$this->_Writer = \Demo\Format\Csv::newInstance();
+		if (parent::prep() === false) {
+			return false;
+		}
 
-		return $this;
+		if ($this->_Writer === null) {
+			$this->_Writer = \Demo\Format\Csv::newInstance();
+		}
+		
+		return true;
 	}
 
 

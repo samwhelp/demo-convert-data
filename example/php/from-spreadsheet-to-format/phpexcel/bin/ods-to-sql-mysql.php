@@ -3,7 +3,6 @@
 	require_once(__DIR__ . '/Boot.php');
 
 	\Demo\Converter\OdsToSqlMysql::newInstance()
-		->prep()
 		->run()
 	;
 

@@ -3,7 +3,6 @@
 	require_once(__DIR__ . '/Boot.php');
 
 	\Demo\Converter\OdsToXml::newInstance()
-		->prep()
 		->run()
 	;
 

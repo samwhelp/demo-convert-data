@@ -9,14 +9,20 @@ class BaseSheet extends Base {
 
 	public function prep()
 	{
-		$this->_Reader = \PHPExcel_IOFactory::createReader($this->_ReaderType);
+		if ($this->_Reader === null) {
+			$this->_Reader = \PHPExcel_IOFactory::createReader($this->_ReaderType);
+		}
 
-		return $this;
+		return true;
 	}
 
 	public function run()
 	{
 		//var_dump(__METHOD__);
+
+		if ($this->prep() === false) {
+			return false;
+		}
 
 		if (!file_exists($this->_SourceFilePath)) {
 			echo('Source File Not Exists: ' . $this->_SourceFilePath . PHP_EOL);
@@ -24,7 +30,7 @@ class BaseSheet extends Base {
 		}
 
 		$this->_Sheet = $this->_Reader->load($this->_SourceFilePath);
-		$this->_Sheet->setActiveSheetIndex(0);		
+		$this->_Sheet->setActiveSheetIndex(0);
 
 		$list = $this->_Sheet->getActiveSheet()->toArray();
 
@@ -35,7 +41,7 @@ class BaseSheet extends Base {
 		;
 
 
-		return;
+		return true;
 	}
 
 

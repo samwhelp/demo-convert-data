@@ -10,11 +10,15 @@ class OdsToHtmlTableCssBootstrap extends BaseSheet {
 
 	public function prep()
 	{
-		parent::prep();
+		if (parent::prep() === false) {
+			return false;
+		}
 
-		$this->_Writer = \Demo\Format\HtmlTableCssBootstrap::newInstance();
-
-		return $this;
+		if ($this->_Writer === null) {
+			$this->_Writer = \Demo\Format\HtmlTableCssBootstrap::newInstance();
+		}
+		
+		return true;
 	}
 
 

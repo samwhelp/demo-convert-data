@@ -1,0 +1,23 @@
+{
+	"name": "samwhelp/phpexcel-quick-start",
+	"description": "phpexcel-quick-start",
+	"type": "project",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "samwhelp",
+			"email": "samwhelp@users.noreply.github.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Demo\\": "src/Demo/"
+		}
+	},
+	"scripts": {
+		"main-usage": "./bin/help.sh"
+	},
+	"require": {
+		"phpoffice/phpexcel": "^1.8"
+	}
+}
